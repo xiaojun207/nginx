@@ -22,6 +22,8 @@ The site is deployed using the default NGINX configuration. This can be overridd
 
 ```
 COPY nginx.conf /etc/nginx/nginx.conf
+COPY conf.d/* /etc/nginx/conf.d/
+COPY stream.d/* /etc/nginx/stream.d/
 ```
 
 to the end of the Dockerfile. For more information, [read the docs](https://hub.docker.com/_/nginx).
